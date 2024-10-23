@@ -69,6 +69,8 @@ Escribe un programa que verifique si un número ingresado por el usuario
 es mayor que 10 y menor que 20. Si cumple ambas condiciones, 
 imprime "El número está entre 10 y 20" */
 
+let num = parseInt(prompt('Ingrese un número: '));
+(num > 10 && num < 20) && console.log('El número está entre 10 y 20');
 
 
 /* 
@@ -77,8 +79,8 @@ Crea un programa que pregunte al usuario su edad y si es mayor de 18 años
 o menor de 65 años, imprime "Puedes trabajar". 
 Utiliza el operador || para combinar las condiciones. */
 
-
-
+let edad = parseInt(prompt('¿Cuál es su edad?: '));
+(edad > 18 && num < 65) && console.log('Puedes trabajar');
 
 
 /* Ejercicio avanzado:
@@ -87,10 +89,14 @@ si ambos son pares. Si lo son, que imprima "Ambos números son pares";
 sino, imprime "Al menos uno de los números no es par". 
 y tienen que usar el operador && para combinar las condiciones. */
 
+let num1 = parseInt(prompt('Ingrese el primer número: '));
+let num2 = parseInt(prompt('Ingrese el segundo número: '));
 
-
-
-
+if (num1 % 2 === 0 && num2 % 2 === 0) {
+    console.log('Ambos números son pares');
+} else {
+    console.log('Al menos uno de los números no es par');
+}
 
 /* respuestas:
 
